@@ -1,14 +1,15 @@
 <div class="container">
   <div class="row">
-    <!-- Mettez ici le composant exercice 1 -->
+    <app-exercice1 [monAttribut]="attributParent" (monEvent)="doExercice1Event($event)"></app-exercice1>
+    <div>Variable exercice1 recue : {{varRecue}}</div>
   </div>
   <div class="row">
-    <app-exercice2></app-exercice2>
+    <app-exercice2 (click)="exercice2Clic()"></app-exercice2>
   </div>
   <div class="row">
-    <!-- Mettez ici le composant exercice 3 -->
+    <app-exercice3></app-exercice3>
   </div>
   <div class="row">
-      <!-- Mettez ici le composant exercice 3 -->
+    <app-exercice4></app-exercice4>
     </div>
 </div>
